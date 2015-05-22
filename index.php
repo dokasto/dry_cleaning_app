@@ -12,7 +12,6 @@ ini_set('session.use_only_cookies', 1);
 // Uses a secure connection (HTTPS) if possible
 ini_set('session.cookie_secure', 1);
 
-
 /* Global Variables */
 $UID = '';
 

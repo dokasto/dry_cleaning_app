@@ -1,0 +1,12 @@
+#banner{
+	height: 200px;
+}
+
+
+.banner {
+padding: 100px 0;
+color: #f8f8f8;
+background: url(../img/shirt.jpg) no-repeat center center;
+background-size: cover;
+color: #000;
+font-family: cursive;

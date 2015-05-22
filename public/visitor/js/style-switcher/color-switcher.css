@@ -1,0 +1,342 @@
+    #style-selector {
+        position: fixed;
+        top: 90px;
+        left: 0;
+        z-index: 9999;
+		border-top: 2px solid #272727;
+		border-right: 2px solid #272727;
+		border-bottom: 2px solid #272727;
+		border-left: 0px solid #272727;
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		
+/*        -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, .3);
+                box-shadow: 0 3px 3px rgba(0, 0, 0, .3);*/
+    }
+    .style-selector-wrapper {
+        position: relative;
+        z-index: 9999;
+        display: inline-block;
+        background: #454545;
+    }
+    .style-selector-wrapper > div {
+        margin: 0px 10px 10px 10px;
+    }
+    #style-selector a.close {
+        position: absolute;
+        top: -2px;
+        right: -48px;
+        width: 46px;
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+        background: #272727 url(colors-swi.png) no-repeat 10px 4px;
+        border-radius: 0px;
+		border-top: 2px solid #272727;
+		border-right: 2px solid #272727;
+		border-bottom: 2px solid #272727;
+		border-left: 0px solid #272727;
+		font-size: 1px;
+		color: #272727;
+    }
+    #style-selector a.active {
+        box-shadow: 0 0 0 2px #000;
+    }
+    #style-selector .title {
+        height: 40px;
+		width: 100%;
+		float: left;
+		display: block;
+        background: #272727;
+        text-align: center;
+        font-size: 14px;
+		font-weight: bold;
+        line-height: 40px;
+		color: #fff;
+		text-transform: uppercase;
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		
+    }
+    #style-selector .title-sub {
+        margin-top: 50px;
+        margin-bottom: 0px;
+		margin-left: 7px;
+		display: block;
+        color: #fff;
+        text-align: left;
+        font-weight: bold;
+        font-size: 12px;
+		text-transform: uppercase;
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    }
+	#style-selector .title-sub2 {
+        margin-top: 18px;
+        margin-bottom: 0px;
+		margin-left: 0px;
+		display: block;
+        color: #fff;
+        text-align: left;
+        font-weight: bold;
+        font-size: 13px;
+		text-transform: uppercase;
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    }
+    #style-selector ul {
+        width: 180px;
+		margin: 0px 0px 0px 0px;
+		padding: 7px 0 5px 0;
+		border-bottom: 1px solid #505053;
+    }
+    #style-selector .styles {
+        overflow: hidden;
+        margin: 0px 0px 0px 0px;
+    }
+    #style-selector .styles li {
+        float: left;
+		margin: 2px;
+		padding: 0;
+		color: #fff;
+		border: 1px solid #454545;
+    }
+    #style-selector .styles li a {
+        display: block;
+        cursor: pointer;
+		color: #fff;
+    }
+    .layout select {
+        margin: 0 3px;
+        width: 100%;
+        font-size: 12px;
+    }
+    .bg-image img {
+        width: auto;
+        height: 100%;
+    }
+
+	#style-selector .menu-fswitcher {
+        margin-left: 9px;
+    }
+	#style-selector .menu-fswitcher select {
+        width:163px;
+		padding: 3px;
+		border: 1px solid #000;
+    }
+
+
+/* ----------- Colors ----------- */
+
+.pre-color-skin1{
+	width:27px;
+	height:20px;
+	background-color: #6fbe48;
+	float: left;
+	cursor: pointer;
+}
+.pre-color-skin2{
+	width:27px;
+	height:20px;
+	background-color: #1889c1;
+	float: left;
+	cursor: pointer;
+}
+.pre-color-skin3{
+	width:27px;
+	height:20px;
+	background-color: #b3d222;
+	float: left;
+	cursor: pointer;
+}
+.pre-color-skin4{
+	width:27px;
+	height:20px;
+	background-color: #0a70e3;
+	float: left;
+	cursor: pointer;
+}
+.pre-color-skin5{
+	width:27px;
+	height:20px;
+	background-color: #00c400;
+	float: left;
+	cursor: pointer;
+}
+.pre-color-skin6{
+	width:27px;
+	height:20px;
+	background-color: #ff0000;
+	float: left;
+	cursor: pointer;
+}
+.pre-color-skin7{
+	width:27px;
+	height:20px;
+	background-color: #00bdbd;
+	float: left;
+	cursor: pointer;
+}
+.pre-color-skin8{
+	width:27px;
+	height:20px;
+	background-color: #ee82ee;
+	float: left;
+	cursor: pointer;
+}
+.pre-color-skin9{
+	width:27px;
+	height:20px;
+	background-color: #ff00a9;
+	float: left;
+	cursor: pointer;
+}
+.pre-color-skin10{
+	width:27px;
+	height:20px;
+	background-color: #964b00;
+	float: left;
+	cursor: pointer;
+}
+
+
+/* ----------- BG Patterns ----------- */
+
+
+.bg-patterns1{
+	width:27px;
+	height:25px;
+	background: #eee url(../../images/elements/bg.png) no-repeat center top;
+	float: left;
+	cursor: pointer;
+}
+.bg-patterns2{
+	width:27px;
+	height:25px;
+	background: #eee url(../../images/elements/pattern19.png) no-repeat center top;
+	float: left;
+	cursor: pointer;
+}
+.bg-patterns3{
+	width:27px;
+	height:25px;
+	background: #eee url(../../images/elements/pattern14.png) no-repeat center top;
+	float: left;
+	cursor: pointer;
+}
+.bg-patterns4{
+	width:27px;
+	height:25px;
+	background: #eee url(../../images/elements/pattern2.png) no-repeat center top;
+	float: left;
+	cursor: pointer;
+}
+.bg-patterns5{
+	width:27px;
+	height:25px;
+	background: #eee url(../../images/elements/pattern7.png) no-repeat center top;
+	float: left;
+	cursor: pointer;
+}
+.bg-patterns6{
+	width:27px;
+	height:25px;
+	background: #eee url(../../images/elements/pattern11.png) no-repeat center top;
+	float: left;
+	cursor: pointer;
+}
+.bg-patterns7{
+	width:27px;
+	height:25px;
+	background: #eee url(../../images/elements/pattern6.png) no-repeat center top;
+	float: left;
+	cursor: pointer;
+}
+.bg-patterns8{
+	width:27px;
+	height:25px;
+	background: #eee url(../../images/elements/pattern20.png) no-repeat center top;
+	float: left;
+	cursor: pointer;
+}
+.bg-patterns9{
+	width:27px;
+	height:25px;
+	background: #eee url(../../images/elements/pattern15.png) no-repeat center top;
+	float: left;
+	cursor: pointer;
+}
+.bg-patterns10{
+	width:27px;
+	height:25px;
+	background: #eee url(../../images/elements/pattern16.png) no-repeat center top;
+	float: left;
+	cursor: pointer;
+}
+
+.bg-patterns11{
+	width:35px;
+	height:27px;
+	background: #eee url(../../images/elements/pattern-small-img1.jpg) no-repeat center top;
+	float: left;
+	cursor: pointer;
+}
+.bg-patterns12{
+	width:35px;
+	height:27px;
+	background: #eee url(../../images/elements/pattern-small-img2.jpg) no-repeat center top;
+	float: left;
+	cursor: pointer;
+}
+.bg-patterns13{
+	width:35px;
+	height:27px;
+	background: #eee url(../../images/elements/pattern-small-img3.jpg) no-repeat center top;
+	float: left;
+	cursor: pointer;
+}
+.bg-patterns14{
+	width:35px;
+	height:27px;
+	background: #eee url(../../images/elements/pattern-small-img4.jpg) no-repeat center top;
+	float: left;
+	cursor: pointer;
+}
+
+
+#style-selector .styles-noborder {
+	overflow: hidden;
+	margin: 0px 0px 0px 0px;
+}
+#style-selector .styles-noborder li {
+	float: left;
+	margin: 0px 0px;
+	padding: 0;
+	color: #ddd;
+}
+#style-selector .styles-noborder li.left {
+	float: left;
+	width: 80px;
+	line-height: 14px;
+}
+#style-selector .styles-noborder li.left em {
+	font-style: normal;
+	line-height: 18px;
+	display: block;
+	margin-top: 7px;
+}
+#style-selector .styles-noborder li.left em a {
+	color: #b3b3b3;
+	font-size: 11px;
+}
+#style-selector .styles-noborder li.left em a:hover {
+	color: #fff;
+}
+
+#style-selector .styles-noborder li img {
+	float: left;
+	width: 100px;
+	height: 70px;
+}
+	
+	
+	
+	
+	
+	
