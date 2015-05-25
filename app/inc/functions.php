@@ -102,10 +102,11 @@ function originAuth(){
         $response = array();
         if($_SERVER['HTTP_ORIGIN'] !== 'http://'.$_SERVER['SERVER_NAME'] && APP_MODE == 'Production' ){
             $response["status"] = false ;
-            $response["result"] = "Request from server " . $_SERVER['HTTP_ORIGIN'] . " is not allowed";
-            push(401,$response);
-            $app = \Slim\Slim::getInstance();
-            $app->stop();
+            /* do nothing here */
+            //$response["result"] = "Request from server " . $_SERVER['HTTP_ORIGIN'] . " is not allowed";
+            //push(401,$response);
+            //$app = \Slim\Slim::getInstance();
+            //$app->stop();
         }
     }
 }
