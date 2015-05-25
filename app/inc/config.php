@@ -12,7 +12,7 @@ ini_set("display_errors", 1);
  * Set the application mode
  * Types: Development / Production
  */
-define('APP_MODE','Development') ;
+define('APP_MODE','Production') ;
 
 /* Temporary storage Directory */
 define('TEMP_DIR','data/tmp/') ;
