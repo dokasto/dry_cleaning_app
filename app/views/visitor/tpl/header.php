@@ -85,14 +85,14 @@
         <div id="menu" class="menu">
           <ul id="tiny">
                 <li><a href="<?php echo URL ?>" class="home">Home</a></li>
-                <li><a href="<?php echo URL ?>about" class="about ">About Us</a></li>
-                <li><a href="<?php echo URL ?>services" class="services">Services</a></li>
-                <li><a href="<?php echo URL ?>contact" class="contact">Contact Us</a></li>
+                <li><a href="<?php echo URL ?>/about" class="about ">About Us</a></li>
+                <li><a href="<?php echo URL ?>/services" class="services">Services</a></li>
+                <li><a href="<?php echo URL ?>/contact" class="contact">Contact Us</a></li>
                 <li>
                     <a href="Javascript:void()">Client Area <i class="fa fa-angle-down"></i></a>
                     <ul>
-                    <li><a href="<?php echo URL ?>client/login">Login</a></li>
-                    <li><a href="<?php echo URL ?>client/register">Sign Up</a></li>
+                    <li><a href="<?php echo URL ?>/client/login">Login</a></li>
+                    <li><a href="<?php echo URL ?>/client/register">Sign Up</a></li>
                    </ul>
                 </li>
 

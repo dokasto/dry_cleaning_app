@@ -8,8 +8,9 @@ error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
 $site_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+$sitename = $_SERVER['HTTP_HOST'];
 
-$sitename = $_SERVER['HTTP_HOST'] ;
+echo $site_link;
 
 
 /**
