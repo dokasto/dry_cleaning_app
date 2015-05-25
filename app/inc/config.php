@@ -9,13 +9,12 @@ ini_set("display_errors", 1);
 
 
 $sitename = $_SERVER['HTTP_HOST'];
-echo $sitename ;
-if(substr($site_link,-1) == '/'){
-    $site_link = substr($site_link, 0, -1);
+//$site_link = 'http://'.$sitename.$_SERVER['REQUEST_URI'];
+if($sitename == 'culmendrycleaners.com'){
+    $site_link = 'http://'.$sitename ;
+}else{
+    $site_link = 'http://localhost:4000/dry_cleaning_app';
 }
-
-
-
 
 
 /**
