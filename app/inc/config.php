@@ -11,9 +11,6 @@ $site_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
 $sitename = $_SERVER['HTTP_HOST'] ;
 
-echo $sitename ;
-
-
 
 /**
  * Set the application mode
@@ -39,8 +36,8 @@ define('SITENAME', 'Culmen Dry Cleaners');
 define('SITE_ADDRESS', 'Shop 1, Block 3,  Bishop Oluwole Steet, Victoria Island, Lagos');
 define('SITE_ADDRESS_2', 'No 41, Abel Abayomi Steet, Harmony Estate, Ajah, Lagos');
 
-define('FROM_EMAIL', 'no-reply@culmendrycleaners.com');
-define('ADMIN_EMAIL', 'info@culmendrycleaners.com');
+define('FROM_EMAIL', 'no-reply@'.$sitename);
+define('ADMIN_EMAIL', 'info@'.$sitename);
 
 /* social media */
 define('SOCIAL_FACEBOOK','');
@@ -49,7 +46,7 @@ define('SOCIAL_GOOGLE','');
 
 /* site contact details */
 define('CONTACT_PHONE', '08181953938 | 08088400566 | 01-2904111');
-define('CONTACT_EMAIL', 'info@culmendrycleaners.com');
+define('CONTACT_EMAIL', 'info@'.$sitename);
 
 /**
  * Configuration for: database
