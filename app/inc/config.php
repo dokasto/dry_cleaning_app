@@ -7,8 +7,12 @@
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
-//$app_url = $_SERVER['REQUEST_URI'] ;
-//echo $app_url;
+$site_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+
+$sitename = $_SERVER['HTTP_HOST'] ;
+
+echo $sitename ;
+
 
 
 /**
@@ -28,7 +32,7 @@ define('IMG_MAX_SIZE',5000000) ;
  * Configuration for: Project URL
  * Put your URL here, for local development "127.0.0.1" or "localhost" (plus sub-folder) is fine
  */
-define('URL', 'http://localhost:4000/dry_cleaning_app');
+define('URL', $site_link);
 
 
 define('SITENAME', 'Culmen Dry Cleaners');
