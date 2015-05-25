@@ -7,6 +7,9 @@
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
+$app_url = $_SERVER['REQUEST_URI'] ;
+echo $app_url;
+
 
 /**
  * Set the application mode
