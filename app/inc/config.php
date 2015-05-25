@@ -50,8 +50,8 @@ define('CONTACT_EMAIL', 'info@culmendrycleaners.com');
  */
 define('DB_TYPE', 'mysql');
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'culmendrycleaners');
-define('DB_USER', 'root');
-define('DB_PASS', '12345');
+define('DB_NAME', 'dmasnigc_culmen');
+define('DB_USER', 'dmasnigc_culmen');
+define('DB_PASS', ']T$RX?aAp^H2');
 
 
