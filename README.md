@@ -1,6 +1,6 @@
 Dry Cleaning Business App
 =================
 
-[![Deployment status from dploy.io](https://udo.dploy.io/badge/45290641976088/31865.svg)](http://dploy.io)
+[![Deployment status from DeployBot](https://culmen.deploybot.com/badge/45290642032788/50042.svg)](http://deploybot.com)
 
 Web application to manage Dry Cleaning Firm Clients
