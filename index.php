@@ -1,7 +1,18 @@
 <?php
 session_start();
 
-echo 'testing'; die();
+$sitename = $_SERVER['HTTP_HOST'];
+$site_link = '';
+//$site_link = 'http://'.$sitename.$_SERVER['REQUEST_URI'];
+if($sitename == 'culmendrycleaners.com'){
+  $site_link = 'http://'.$sitename ;
+}else{
+  $site_link = 'http://localhost:8888/Archives/dry_cleaning_app';
+}
+
+echo $site_link;
+
+die();
 
 // **PREVENTING SESSION HIJACKING**
 // Prevents javascript XSS attacks aimed to steal the session ID
