@@ -32,7 +32,9 @@ $app->group('/admin', function () use ($app) {
         $view->setBody(ADMIN_VIEWS . '/bookings.php');
         $bookingModel = new bookingModel();
         $data = $bookingModel->fetchBookings();
-        $view->setVar('data',$data['result']);
+        if(isset($data['result'])) {
+            $view->setVar('data',$data['result']);
+        }
         $view->render();
     });
 
@@ -45,7 +47,9 @@ $app->group('/admin', function () use ($app) {
         $view->setBody(ADMIN_VIEWS . '/clients.php');
         $clientModel = new clientModel();
         $clientsData = $clientModel->getClients();
-        $view->setVar('clients',$clientsData->result);
+        if(isset($clientsData->result)) {
+            $view->setVar('clients',$clientsData->result);
+        }
         $view->render();
     });
 

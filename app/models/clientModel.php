@@ -46,10 +46,12 @@ class clientModel extends models{
         while($client = $qry->fetch_assoc()){
             $this->return['result'][] = new ArrToObj($client) ;
         }
-        if( is_array($this->return['result']) && count($this->return['result']) > 1 ){
+        if( isset($this->return['result']) && is_array($this->return['result']) && count($this->return['result']) > 1 ){
             $this->return['status'] = true ;
         }
-        return new ArrToObj($this->return);
+        if(is_array($this->return)) {
+            return new ArrToObj($this->return);
+        }
     }
 
 

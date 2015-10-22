@@ -27,6 +27,7 @@
             </tr>
 
             </thead>
+            <?php if(isset($this->clients )) { ?>
             <?php foreach($this->clients as $client){ ?>
             <tr>
                 <td><strong><a href=<?php echo "'".URL . '/admin/clients/'.$client->client_id."'><i class='glyphicon glyphicon-user'></i> " . $client->name ; ?></a></strong></td>
@@ -34,6 +35,7 @@
                 <td><?php echo $client->email ?></td>
                 <td><a class="btn btn-warning btn-xs" href="./bookings/<?php echo $client->client_id ?>/new"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;Book new</a></td>
             </tr>
+            <?php } ?>
             <?php } ?>
 
         </table>
