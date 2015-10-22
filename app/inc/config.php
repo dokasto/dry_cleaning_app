@@ -19,9 +19,9 @@ if($sitename == 'culmendrycleaners.com'){
      */
     define('DB_TYPE', 'mysql');
     define('DB_HOST', 'localhost');
-    define('DB_NAME', 'culmendrycleaners');
-    define('DB_USER', 'root');
-    define('DB_PASS', 'root');
+    define('DB_NAME', 'culmendr_db');
+    define('DB_USER', 'culmendr_admin');
+    define('DB_PASS', 'TmAc82j9y9');
 }else{
     // Development
     $site_link = 'http://localhost:8888/Archives/dry_cleaning_app';
