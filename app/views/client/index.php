@@ -84,7 +84,11 @@ if(isset($this->data)){
 
  <script type="text/javascript">
      $(document).ready(function(){
+       try {
          $("#bookingsTable").DataTable();
-         $(".navbar").find(".dashboard").addClass("active") ;
+       } catch (e) {
+         console.log(e);
+       }
+      $(".navbar").find(".dashboard").addClass("active") ;
      });
  </script>
