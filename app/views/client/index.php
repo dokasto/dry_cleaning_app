@@ -33,7 +33,7 @@ if(isset($this->data)){
                   </tr>
               </thead>
                 <tbody>
-                <?php if(isset($bookings)){ ?>
+                <?php if(isset($bookings)){ echo "<script>var bookingsTable = true;</script>"?>
                     <?php foreach($bookings as $data){ ?>
                         <tr>
                             <td><?php echo $data->code ?></td>
@@ -84,10 +84,8 @@ if(isset($this->data)){
 
  <script type="text/javascript">
      $(document).ready(function(){
-       try {
+       if(bookingsTable) {
          $("#bookingsTable").DataTable();
-       } catch (e) {
-         console.log(e);
        }
       $(".navbar").find(".dashboard").addClass("active") ;
      });
