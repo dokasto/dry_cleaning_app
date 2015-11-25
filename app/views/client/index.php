@@ -5,6 +5,10 @@ if(isset($this->data)){
 }
 ?>
 
+<script>
+var bookingsTable = false;
+</script>
+
  <style type="text/css">
             body {
                 padding-top: 0px;
@@ -33,7 +37,7 @@ if(isset($this->data)){
                   </tr>
               </thead>
                 <tbody>
-                <?php if(isset($bookings)){ echo "<script>var bookingsTable = true;</script>"?>
+                <?php if(isset($bookings)){ echo "<script>bookingsTable = true;</script>"?>
                     <?php foreach($bookings as $data){ ?>
                         <tr>
                             <td><?php echo $data->code ?></td>
