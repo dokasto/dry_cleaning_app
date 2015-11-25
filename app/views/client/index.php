@@ -13,11 +13,11 @@ if(isset($this->data)){
   </style>
     <div class="container">
       <!-- Example row of columns -->
-   
+
       <div class="container">
 	<div class="row">
 		<div class="col-md-12" style="padding-bottom:80px;">
-    <legend>Dash Board</legend>
+    <legend>Dashboard</legend>
     <div class="panel panel-info">
     <div class="panel-heading">
        <h4 class="panel-title "><span class="text-muted">Booking History</span></h4>
@@ -76,7 +76,7 @@ if(isset($this->data)){
             </table>
             </div>
 
-        </div>    
+        </div>
 	</div>
 </div>
 
@@ -88,4 +88,3 @@ if(isset($this->data)){
          $(".navbar").find(".dashboard").addClass("active") ;
      });
  </script>
-

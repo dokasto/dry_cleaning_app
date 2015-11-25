@@ -19,7 +19,7 @@
             #updateBtn{
                 display: none;
             }
-           
+
         </style>
 
 <style type="text/css" media="print">
@@ -35,7 +35,7 @@
     <div class="container">
       <!-- Example row of columns -->
 
-   <div class="row"> 
+   <div class="row">
     <div class="panel panel-default col-md-8 col-md-offset-2">
         <div class="row"  style="margin-top:-13px;">
             <div style="margin-top:19px;" class="col-md-4 col-md-offset-0">
@@ -72,7 +72,7 @@
                                 <span style="font-size: 15px; padding:3px 10px;" class="label label-success">Paid</span>
                             <?php }else{ ?>
                                 <span style="font-size: 15px; padding:3px 10px;" class="label label-danger">Unpaid</span>
-                                <a href="paynow.html">Pay now</a>
+                                <!-- <a href="paynow.html">Pay now</a> -->
                             <?php } ?>
                         </div>
                     </div>
