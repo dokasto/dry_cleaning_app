@@ -5,6 +5,10 @@
        }
 ?>
 
+<script>
+var bookingsTable = false;
+</script>
+
      <div class="container">
     <div class="row">
         <div class="col-md-12 col-md-offset-1" >
@@ -24,7 +28,7 @@
            </tr>
                </thead>
                 <tbody>
-                <?php if(isset($bookings)){ ?>
+                <?php if(isset($bookings)){ echo "<script> bookingsTable = True; </script>"?>
                     <?php foreach($bookings as $data){ ?>
                   <tr>
                   <td><?php echo $data->code ?></td>
@@ -74,10 +78,8 @@
 
 <script type="text/javascript">
     $(document).ready(function(){
+      if(bookingsTable) {
         $("#bookingsTable").DataTable();
+      }
     });
 </script>
-
-
-
-  
