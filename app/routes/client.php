@@ -18,7 +18,9 @@ $app->group('/client', function () use ($app) {
         $client_id = $_SESSION['secure_user']['client_id'] ;
         $bookingModel = new bookingModel();
         $data = $bookingModel->fetchBookings($client_id);
-        $view->setVar('data',$data['result']);
+        if(isset($data['result'])) {
+            $view->setVar('data',$data['result']);
+        }
         $view->render();
     });
 
