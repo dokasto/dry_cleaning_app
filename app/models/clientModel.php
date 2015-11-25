@@ -210,6 +210,7 @@ class clientModel extends models{
         $get = $this->db->dbSELECT('picture',"client_id='".$client_id."'",$this->tbl_clients);
         $old_picture = $get->result->picture ;
         $uploadedPicture = '' ;
+        var_dump($picture); die();
         /* upload new image */
         $imgFileName = Utility::rand(10); // generate random
         $image = new Upload($picture);
@@ -349,4 +350,4 @@ class clientModel extends models{
     }
 
 
-} 
+}

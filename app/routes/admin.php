@@ -47,7 +47,7 @@ $app->group('/admin', function () use ($app) {
         $view->setBody(ADMIN_VIEWS . '/clients.php');
         $clientModel = new clientModel();
         $clientsData = $clientModel->getClients();
-        if(isset($clientsData->result)) {
+        if($clientsData->result) {
             $view->setVar('clients',$clientsData->result);
         }
         $view->render();

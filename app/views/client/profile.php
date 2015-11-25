@@ -10,7 +10,7 @@ if(strlen( $client->picture ) > 5 ){
 
 ?>
 
-   <div class="container"> 
+   <div class="container">
       <div class="row" style="margin-top:30px;">
       <div class="panel panel-info">
         <div class="panel-heading text-center"><strong class="h3" id="text">My Profile</strong></div>
@@ -18,8 +18,8 @@ if(strlen( $client->picture ) > 5 ){
       <div class="panel panel-default">
       <div class="panel-body">
 
- <form class="form-horizontal col-md-4" id="uploadForm" role="form">
-          <fieldset class="col-md-offset-3"> 
+ <!-- <form class="form-horizontal col-md-4" id="uploadForm" role="form">
+          <fieldset class="col-md-offset-3">
              <div class="form-group">
      <p><img src="<?php echo $picture ?>" width="100px" alt="" style="background:#eee; margin-left:90px;" class="img-circle img-responsive" /></p>
     <input type="file" id="pictureFile" name="picture" class="btn btn-primary" >
@@ -27,38 +27,38 @@ if(strlen( $client->picture ) > 5 ){
     <p class="help-block">Change profile picture</p>
   </div>
               </fieldset>
-              </form>
+              </form> -->
 
 
         <form class="form-horizontal col-md-8" id="profileForm" role="form">
           <fieldset>
-              <div class="form-group"> 
-                <label class="col-sm-3 control-label" for="card-holder-name">Name</label> 
-                <div class="col-sm-9"> 
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="card-holder-name">Name</label>
+                <div class="col-sm-9">
                   <input type="text" class="form-control req" name="name" value="<?php echo $client->name ?>" placeholder="name">
-                   </div> 
-              </div> 
-              <div class="form-group"> 
-                        <label class="col-sm-3 control-label" for="card-number">Address</label> 
-                        <div class="col-sm-9"> 
+                   </div>
+              </div>
+              <div class="form-group">
+                        <label class="col-sm-3 control-label" for="card-number">Address</label>
+                        <div class="col-sm-9">
                           <input type="text" class="form-control req" name="address" value="<?php echo $client->address ?>" placeholder="address">
-                        </div> 
-                      </div> 
-                        <div class="form-group"> 
-                            <label class="col-sm-3 control-label" for="cvv">Phone</label>
-                              <div class="col-sm-3"> 
-                              <input type="text" class="form-control req" name="phone" value="<?php echo $client->phone ?>"placeholder=" ">
-                              </div> 
-                          </div>
-                      <div class="form-group"> 
-                        <label class="col-sm-3 control-label" for="card-number">Email</label> 
-                        <div class="col-sm-9"> 
-                          <input type="text" name="email" class="form-control req" value="<?php echo $client->email ?>" />
-                        </div> 
+                        </div>
                       </div>
-                        
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="cvv">Phone</label>
+                              <div class="col-sm-3">
+                              <input type="text" class="form-control req" name="phone" value="<?php echo $client->phone ?>"placeholder=" ">
+                              </div>
+                          </div>
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label" for="card-number">Email</label>
+                        <div class="col-sm-9">
+                          <input type="text" name="email" class="form-control req" value="<?php echo $client->email ?>" />
+                        </div>
+                      </div>
+
              <input type="hidden" name="client_id" value="<?php echo $client->client_id ?>" />
-                            
+
           </fieldset>
           <div class="form-group">
                               <div class="col-sm-offset-4 col-sm-4">
@@ -87,7 +87,7 @@ if(strlen( $client->picture ) > 5 ){
             #text{
               color:#000;
             }
-           
+
         </style>
 
 <script type="text/javascript">
