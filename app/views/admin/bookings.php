@@ -28,7 +28,7 @@ var bookingsTable = false;
            </tr>
                </thead>
                 <tbody>
-                <?php if(isset($bookings)){ echo "<script> bookingsTable = True; </script>"?>
+                <?php if(isset($bookings)){ echo "<script> bookingsTable = True; </script>";?>
                     <?php foreach($bookings as $data){ ?>
                   <tr>
                   <td><?php echo $data->code ?></td>

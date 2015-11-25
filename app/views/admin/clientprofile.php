@@ -1,9 +1,9 @@
 
 <style>
-            
-            body { 
-              padding-top:0px; 
-              } 
+
+            body {
+              padding-top:0px;
+              }
 
 
             .glyphicon {  margin-bottom: 10px;margin-right: 10px;}
@@ -16,8 +16,12 @@
               .black{
                 color:#000;
               }
-             
+
         </style>
+
+        <script>
+        var bookingsTable = false;
+        </script>
 
     <!--content-->
    <div class="container">
@@ -25,7 +29,7 @@
            <div class="col-xs-12 col-sm-6 col-md-6 col-md-offset-4">
                <div class="well well-sm">
                    <div class="row">
-                       <div class="col-sm-6 col-md-4">
+                       <!-- <div class="col-sm-6 col-md-4">
                            <?php
                            $file = 'data/profiles/' .$this->client->picture ;
                            if( strlen($this->client->picture) > 2 && file_exists($file)){
@@ -35,7 +39,7 @@
                            }
                            ?>
                            <img src="<?php echo $picture ?>" alt="" class="img-rounded img-responsive" />
-                       </div>
+                       </div> -->
                        <div class="col-sm-6 col-md-8">
                            <h4><?php echo $this->client->name ?></h4>
                            <small><cite title="San Francisco, USA"><?php echo $this->client->address ?> <i class="glyphicon glyphicon-map-marker">
@@ -69,6 +73,7 @@
 
        <?php
        if(isset($this->bookings)){
+          echo "<script> bookingsTable = True; </script>";
            $bookings = $this->bookings;
            unset($this->bookings);
        }
@@ -140,6 +145,8 @@
 
        <script>
            $(function(){
-               $("#history").dataTable();
+             if(bookingsTable) {
+               $("#history").DataTable();
+             }
            });
        </script>
